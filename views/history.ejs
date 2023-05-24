@@ -1,0 +1,30 @@
+<%- include('layout/header') %>
+
+<h2>Service History</h2>
+
+<p>View your service history below:</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Request ID</th>
+            <th>Public Place</th>
+            <th>Vehicle Type</th>
+            <th>Duration</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (let i = 0; i < history.length; i++) { %>
+            <tr>
+                <td><%= history[i].requestId %></td>
+                <td><%= history[i].publicPlace %></td>
+                <td><%= history[i].vehicleType %></td>
+                <td><%= history[i].duration %></td>
+                <td><%= history[i].status %></td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
+
+<%- include('layout/footer') %>

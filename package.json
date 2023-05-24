@@ -1,0 +1,21 @@
+{
+    "name": "car-parking-reservation-system",
+    "version": "1.0.0",
+    "description": "Car Parking Reservation System",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+        "bcrypt": "^5.1.0",
+        "dotenv": "^10.0.0",
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "express-session": "^1.17.2",
+        "mysql": "^2.18.1",
+        "mysql2": "^2.3.0",
+        "sequelize": "^6.10.0"
+    }
+}

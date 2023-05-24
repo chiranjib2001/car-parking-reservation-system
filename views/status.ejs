@@ -1,0 +1,15 @@
+<%- include('layout/header') %>
+
+<h2>Service Status</h2>
+
+<p>Check the status of your requested service below:</p>
+
+<form action="/status" method="POST">
+    <div>
+        <label for="requestId">Request ID:</label>
+        <input type="text" id="requestId" name="requestId" required>
+    </div>
+    <button type="submit">Check Status</button>
+</form>
+
+<%- include('layout/footer') %>
