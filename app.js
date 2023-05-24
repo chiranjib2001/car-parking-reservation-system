@@ -6,15 +6,6 @@ const path = require('path');
 // Load environment variables
 dotenv.config();
 
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log('Connected to the MySQL database');
-  })
-  .catch((error) => {
-    console.error('Unable to connect to the database:', error);
-  });
-
 
 // Create Express app
 const app = express();
